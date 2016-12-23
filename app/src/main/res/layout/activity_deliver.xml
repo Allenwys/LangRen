@@ -11,4 +11,36 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.administrator.langren.DeliverActivity">
 
+
+    <Button
+        android:text="下一位玩家"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/buttonN"
+        android:onClick="onclick2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="查看身份"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonS"
+        android:onClick="onclick1"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/buttonN"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="40dip"
+        android:id="@+id/textView"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
