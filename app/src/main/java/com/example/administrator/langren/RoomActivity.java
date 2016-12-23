@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -24,19 +25,21 @@ public class RoomActivity extends Activity {
     private TextView textView14;
     private Button btnStart;
     private SeekBar sb;
-    private int num = 0;
+    private int num = 7;
     private int[][] jobs = {{1,1,0,0,2,3},
             {1,1,0,0,2,4},
             {1,1,1,0,3,3},
             {1,1,1,0,3,4},
             {1,1,1,0,3,5},
             {1,1,1,1,4,4}};
+    private RelativeLayout rl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_room);
-
+        rl = (RelativeLayout) findViewById(R.id.activity_room);
+        rl.getBackground().setAlpha(50);
         textViewTitle = (TextView)findViewById(R.id.textView);
         textViewTitle.setText("请选择游戏人数：");
         sb = (SeekBar)findViewById(R.id.seekBar);
